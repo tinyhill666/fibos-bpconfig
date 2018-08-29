@@ -1,0 +1,4 @@
+node_modules/
+fibos.pid
+log
+data/
