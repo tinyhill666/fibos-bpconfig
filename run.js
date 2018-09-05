@@ -31,8 +31,8 @@ var config = {
     "public-key": "",
     "private-key": "",
     "parameter": {
-        "genesis-json": "./genesis.json",
-        "delete-all-blocks": true
+        //"genesis-json": "./genesis.json",
+        //"delete-all-blocks": true
     }
 }
 
