@@ -19,9 +19,11 @@
     ],
     "config_dir": "./config",
     "data_dir": "./data",
-    "http_server_address": "0.0.0.0:8888",
-    "p2p_listen_endpoint": "0.0.0.0:9876",
     "producer-name": "",
     "public-key": "",
-    "private-key": ""
+    "private-key": "",
+    "parameter": {
+        "genesis-json": "./genesis.json",
+        "delete-all-blocks": true
+    }
 }

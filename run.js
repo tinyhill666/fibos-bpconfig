@@ -8,11 +8,11 @@ console.notice("config_dir:", fibos.config_dir);
 console.notice("data_dir:", fibos.data_dir);
 
 fibos.load("http", {
-	"http-server-address": config.http_server_address
+	"http-server-address": "0.0.0.0:8888"
 });
 
 fibos.load("net", {
-	"p2p-listen-endpoint": config.p2p_listen_endpoint,
+	"p2p-listen-endpoint": "0.0.0.0:9876",
 	"p2p-peer-address": config.p2p_peer_address
 });
 
@@ -21,10 +21,7 @@ fibos.load("producer", {
 	'private-key': JSON.stringify([config["public-key"], config["private-key"]])
 });
 
-fibos.load("chain", {
-	"genesis-json": "./genesis.json",
-	"delete-all-blocks": true
-});
+fibos.load("chain",config.parameter);
 fibos.load("chain_api");
 fibos.enableJSContract = false;
 
